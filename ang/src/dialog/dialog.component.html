@@ -1,0 +1,11 @@
+<h1 mat-dialog-title>Edit Event</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Event Name</mat-label>
+    <input matInput [(ngModel)]="data.eventName">
+  </mat-form-field>
+</div>
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button (click)="onSubmit()">Save</button>
+</mat-dialog-actions>
